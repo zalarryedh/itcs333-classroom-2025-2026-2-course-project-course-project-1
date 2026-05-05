@@ -231,7 +231,8 @@ if (!is_numeric($resourceId)) {
     
     if ($resource) {
         sendResponse(['success'=>true,'data'=>$resource]);
-    } else {
+    }
+    else {
         sendResponse(['success'=>false,'message'=>'Resource not found'],404);
     }
 
