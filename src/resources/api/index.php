@@ -713,10 +713,9 @@ else {
         }
         // TODO: Return HTTP 405 Method Not Allowed for unsupported methods
 
-    else {
+else {
     sendResponse(['success' => false, 'message' => 'Method not allowed'], 405);
 }
-
 }
  catch (PDOException $e) {
     // TODO: Log the error with error_log()
